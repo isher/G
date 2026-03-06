@@ -1,19 +1,34 @@
-<html><head>
+<html>
+<head>
    <title>优速游戏</title>
-      <meta name="theme-color" content="#ffe18f">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" centent="优速游戏原名游戏骑士,单机游戏仓库单机游戏下载网站为广大单机游戏玩家提供大型单机游戏下载，海量中文版PC电脑单机游戏、经典单机游戏下载，致力打造一个安全无毒的大型单机游戏下载网站。3A大作,第一人称游戏,第三人称刺客信条、古墓露营,即时战略游戏重制版家园、红色警报下载">
-<meta data-react-helmet="true" property="og:description" content="优速游戏原名游戏骑士,单机游戏仓库单机游戏下载网站为广大单机游戏玩家提供大型单机游戏下载，海量中文版PC电脑单机游戏、经典单机游戏下载，致力打造一个安全无毒的大型单机游戏下载网站。3A大作,第一人称游戏,第三人称刺客信条、古墓露营,即时战略游戏重制版家园、红色警报下载">
-<meta data-react-helmet="true" property="og:image" content="https://g.qsis.cn:88/upload/images/favicon.png">
-<meta data-react-helmet="true" property="og:type" content="">
-<meta name=”keywords”content=”优速游戏,游戏骑士,经典单机游戏,单机游戏下载,电脑单机游戏,单机游戏下载网站,大型单机游戏下载,3A游戏,硬盘版游戏,射击游戏,即时战略游戏”/>
-<meta data-react-helmet="true" property="og:site_name" content="优速游戏">
+   <meta name="theme-color" content="#ffe18f">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <!-- 修正笔误：centent → content，保证描述能被读取 -->
+   <meta name="description" content="优速游戏原名游戏骑士,单机游戏仓库单机游戏下载网站为广大单机游戏玩家提供大型单机游戏下载，海量中文版PC电脑单机游戏、经典单机游戏下载，致力打造一个安全无毒的大型单机游戏下载网站。3A大作,第一人称游戏,第三人称刺客信条、古墓露营,即时战略游戏重制版家园、红色警报下载">
+   <meta property="og:description" content="优速游戏原名游戏骑士,单机游戏仓库单机游戏下载网站为广大单机游戏玩家提供大型单机游戏下载，海量中文版PC电脑单机游戏、经典单机游戏下载，致力打造一个安全无毒的大型单机游戏下载网站。3A大作,第一人称游戏,第三人称刺客信条、古墓露营,即时战略游戏重制版家园、红色警报下载">
+   <meta property="og:image" content="https://g.qsis.cn:88/upload/images/favicon.png">
+   <!-- 补全OG类型，符合协议规范 -->
+   <meta property="og:type" content="website">
+   <!-- 修正全角引号 + 半角逗号分隔关键词，SEO更友好 -->
+   <meta name="keywords" content="优速游戏,游戏骑士,经典单机游戏,单机游戏下载,电脑单机游戏,单机游戏下载网站,大型单机游戏下载,3A游戏,硬盘版游戏,射击游戏,即时战略游戏">
+   <meta property="og:site_name" content="优速游戏">
 
-<script>
-var current_url = window.location.href;
-target_url = current_url.replace("https://game.qsis.cn/","https://g.qsis.cn:88");
-window.location = target_url;
-</script></head>
+   <!-- 核心优化：meta refresh 跳转（爬虫识别） + JS延时兜底（用户体验） -->
+   <meta http-equiv="refresh" content="0; url=https://g.qsis.cn:88/">
+   <script>
+   // 优化URL替换逻辑：只换域名，保留路径/参数，避免跳转丢页面
+   var current_url = window.location.href;
+   target_url = current_url.replace("game.qsis.cn", "g.qsis.cn:88");
+   // 延时100ms触发JS跳转，优先让爬虫识别meta跳转
+   setTimeout(function() {
+       window.location.href = target_url;
+   }, 100);
+   </script>
+</head>
 <body>
+   <!-- 补充兜底文本+链接，防止跳转失效时用户无操作入口 -->
+   <p style="text-align:center; margin-top:50px;">
+       <a href="https://g.qsis.cn:88/" target="_blank">优速游戏 - 安全无毒的单机游戏下载网站</a>
+   </p>
 </body>
 </html>
